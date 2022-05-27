@@ -1,0 +1,84 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --naranja: #ff8800;
+    --gris: #8f8f8f;
+    --grisClaro: #d6d6d6;
+    font-family: 'Montserrat';
+}
+
+html {
+    box-sizing: border-box;
+    /* Hack para que las cajas ocupan el espacio definido teniendo en cuenta los padding, margin, etc...*/
+    font-size: 62.5%;
+    /* Lo usamos para igualar 1rem a 10px*/
+}
+h1 {
+    font-size: 8rem;
+    font-style: italic;
+    color: var(--blanco);
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--blanco);
+    align-items: center;
+}
+
+h3{
+    text-align:center;
+    font-size: 4rem;
+}
+header{
+    color: var(--blanco);
+}
+section{
+    width: 400px;
+    float:left;
+    margin-left:15px;
+    margin-bottom:15px;
+}
+aside{
+    float:right;
+    margin-bottom: 15px;
+    border-radius: 15px; 
+}
+
+body{
+    margin : 0;
+    padding: 0;
+    background-color: var(--gris);
+}
+ 
+.header{
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Navegación*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+li {
+	display:inline-block;
+}
+
+/*Tabla*/
+th{
+    font-style: italic;
+}
+
+th, .blanco{
+    background: var(--blanco);
+}
+
+.gris {
+    background: var(--gris);
+}
