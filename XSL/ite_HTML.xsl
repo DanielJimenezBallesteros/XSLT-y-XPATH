@@ -45,6 +45,9 @@
                                     <td>
                                         <xsl:value-of select="id"/>
                                     </td>
+                                    <td>
+                                        <xsl:value-of select="nombre"/>
+                                    </td>
                                 </tr>
                                 </xsl:for-each>
                             </th2>

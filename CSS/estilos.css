@@ -1,12 +1,3 @@
-:root {
-    --blanco: #ffffff;
-    --negro: #000000;
-    --naranja: #ff8800;
-    --gris: #8f8f8f;
-    --grisClaro: #d6d6d6;
-    font-family: 'Montserrat';
-}
-
 html {
     box-sizing: border-box;
     /* Hack para que las cajas ocupan el espacio definido teniendo en cuenta los padding, margin, etc...*/
@@ -14,72 +5,41 @@ html {
     /* Lo usamos para igualar 1rem a 10px*/
 }
 
+body {
+    background-color: beige;
+}
+
 h1 {
-    font-size: 8rem;
-    font-style: italic;
-    color: var(--blanco);
-    margin: 0;
-    text-align: center;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 30px;
-    color: var(--blanco);
-    align-items: center;
+    font-size: 2rem;
 }
 
-h3{
-    text-align:center;
-    font-size: 4rem;
-}
-header{
-    color: var(--blanco);
-}
-section{
-    width: 400px;
-    float:left;
-    margin-left:15px;
-    margin-bottom:15px;
-}
-aside{
-    float:right;
-    margin-bottom: 15px;
-    border-radius: 15px; 
-}
-
-body{
-    margin : 0;
-    padding: 0;
-    background-color: var(--gris);
-}
- 
-.header{
-    background-color: var(--negro);
+.contenedor {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
-/*Navegación*/
+section {
+    display: flex;
+}
+
+table {
+    padding: 2rem;
+}
+
 ul {
-	list-style-type:none;
-	margin:0;
-	padding:0;
+    padding: 2rem;
 }
 
-li {
-	display:inline-block;
+form {
+    box-shadow: 9px 10px 24px -17px #f5d89f;
 }
 
-/*Tabla*/
-th{
-    font-style: italic;
-}
-
-th, .blanco{
-    background: var(--blanco);
-}
-
-.gris {
-    background: var(--gris);
+th {
+    background-color: aquamarine;
 }
