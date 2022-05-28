@@ -52,18 +52,7 @@
                                 </xsl:for-each>
                             </th2>
                         </table>
-                        <!--Lista no ordenada con el director y el jefe de estudios-->
-                        <ul>
-                            <h3>
-                                Direccion del centro formativo
-                            </h3>
-                            <li>
-                                Director:<xsl:value-of select="director/nombre"/><br/> Despacho: <xsl:value-of select="director/despacho"/>
-                            </li>
-                            <li>
-                                Jefe de estudios:<xsl:value-of select="jefe_estudios/nombre"/><br/> Despacho: <xsl:value-of select="jefe_estudios/despacho"/>
-                            </li>
-                        </ul>
+                        
                         <!--Segunda Tabla con los ciclos formativos y los datos que contiene-->
                         <table>
                             <caption>
@@ -102,6 +91,21 @@
                                 </tr>
                             </xsl:for-each>
                         </table>
+
+                        <!--Lista no ordenada con el director y el jefe de estudios-->
+                        <ul>
+                            <h3>
+                                Direccion del centro formativo
+                            </h3>
+                            <li>
+                                Director:<xsl:value-of select="director/nombre"/><br/> Despacho: <xsl:value-of select="director/despacho"/>
+                            </li>
+                            <li>
+                                Jefe de estudios:<xsl:value-of select="jefe_estudios/nombre"/><br/> Despacho: <xsl:value-of select="jefe_estudios/despacho"/>
+                            </li>
+                        </ul>
+
+
                     </section>
                     <!--Formulario de contacto que cuenta con los ciclos formativos de la lista de consultas-->
                     <aside>
